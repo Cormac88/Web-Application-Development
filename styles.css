@@ -1,0 +1,58 @@
+/* Set styles for HTML body */
+body {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+/* Set darkmode styles class */
+.dark {
+  background: black;
+  color: lightgray;
+}
+/* Form styles */
+form {
+  border: 2px solid rebeccapurple;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+}
+/* Nav styles */
+nav {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+/* Button style */
+button {
+  background-color: peachpuff;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0.5em 1em;
+}
+/* Input styles */
+input {
+  margin: 1em 0;
+}
+/* Wrapper for darkmode checkbox and label */
+#dark {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+/* d3 containers */
+#rain,
+#letterFrequency {
+  height: 500px;
+  width: 500px;
+}
+/* Chart interation art button wrapper */
+#btnWrapper {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}

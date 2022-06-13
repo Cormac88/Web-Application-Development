@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <title>Rain Page</title>
+  <!-- Import style sheet -->
+  <link rel="stylesheet" href="./styles.css" />
+  <body>
+    <!-- Links for navigation between pages -->
+    <nav>
+      <a href="./rain.html">Rain</a>
+      <a href="./index.html">Login</a>
+      <a href="./home.html">Home</a>
+      <a href="./letters.html">Letters</a>
+    </nav>
+    <!-- Dark Mode toggle checkbox -->
+    <div id="dark">
+      <input id="darkmode" type="checkbox" />
+      <label for="darkmode">Dark Mode</label>
+    </div>
+    <!-- Title and text for graph -->
+    <h1>Average Monthly Rainfall in Ireland 2021</h1>
+    <p>
+      This graph shows the average monthly rainfull as a percentage of the norm
+      in Ireland in 2021.
+    </p>
+    <!-- Element for d3 chart -->
+    <div id="rain"></div>
+    <!-- Buttons for ineteracting with chart -->
+    <div id="btnWrapper">
+      <button onclick="toggleColor()">change color</button>
+      <button onclick="triggerAnimation()">trigger animation</button>
+      <button onclick="changeSize()">change size</button>
+    </div>
+  </body>
+  <!-- Import d3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.4.4/d3.min.js"></script>
+  <!-- Import shared script file -->
+  <script src="./script.js"></script>
+  <!-- Import rain script -->
+  <script src="./rain.js"></script>
+</html>
